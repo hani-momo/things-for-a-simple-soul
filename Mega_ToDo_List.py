@@ -1,4 +1,6 @@
 from datetime import date
+
+
 class User:
     max_tasks = 10
 
@@ -148,7 +150,7 @@ def delete_task(user):
                 print('Going back!')
                 return
             else:
-                print("Please answer 'yes' or 'no': ")
+                print("I didn't catch that. 'yes' or 'no': ")
 
 
 def complete_task(user):
@@ -165,11 +167,11 @@ def complete_task(user):
         print(f'{task_num}. {task}')
 
     if not tasks:
-        print('No tasks on this day.')
+        print('No plans for this day.')
         return
 
     while True:
-        choice = input("Task under what number to mark as completed ('cancel' to go back)? ").lower()
+        choice = input("Task under what number mark as completed ('cancel' to go back)? ").lower()
         if choice == 'cancel':
             print('Going back!')
             return
@@ -213,7 +215,7 @@ while True:
 
     if logged_in:
         while True:
-            action = input('\nWhat are we doing here?\n\t1. Add task\n\t2. Show tasks\n\t3. Delete task\n\t4. Mark done task\n\t5. Log out\n')
+            action = input('\nWhat do you want to do here?\n\t1. Add task\n\t2. Show tasks\n\t3. Delete task\n\t4. Mark done task\n\t5. Log out\n')
 
             if action == '1' or action.lower() == 'add task':
                 add_task(user)
@@ -227,6 +229,6 @@ while True:
                 print('See you around!')
                 break
             else:
-                print("\nSorry, I didn't catch that. What are we doing here?")
+                print("\nSorry, I didn't catch that.")
 
         logged_in = False
