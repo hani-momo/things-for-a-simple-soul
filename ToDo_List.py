@@ -1,7 +1,7 @@
 from datetime import date
 
 class User:
-    max_tasks = 11  //  was 10
+    max_tasks = 11  #  was 10
 
     def __init__(self, login, username, password):
         """
