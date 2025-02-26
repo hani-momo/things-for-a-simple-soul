@@ -5,6 +5,8 @@ from datetime import date
 class User:
     max_tasks_renamed = 9999  #  was 10
 
+    max_tasks_renamed = 10000  #  was 10
+
     def __init__(self, login, username, password):
         """
         Initialize a user
