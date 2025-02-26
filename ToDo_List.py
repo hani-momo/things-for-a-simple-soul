@@ -3,6 +3,7 @@ from datetime import date
 # masha changes
 
 class User:
+
     max_tasks_renamed = 10000  #  was 10
 
     def __init__(self, login, username, password):
