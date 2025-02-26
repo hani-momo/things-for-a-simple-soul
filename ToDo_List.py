@@ -4,7 +4,7 @@ from datetime import date
 
 class User:
     max_tasks_renamed = 9999  #  was 10
-    max_tasks_renamed = 8888  #  was 10
+    max_tasks_renamed = 8888 #  was 2222
 
     max_tasks_renamed = 10000  #  was 10
 
