@@ -2,8 +2,8 @@ from datetime import date
 
 # masha changes
 
-def my_procdure():
-    pass
+def my_procedure():
+    return
 
 class User:
     max_tasks_renamed = 9999  #  was 10
